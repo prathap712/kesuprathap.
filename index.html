@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kesu...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Kesu!</h1>
+        <p>You are the most amazing person I've ever met. Every moment with you feels like a dream come true. I can't imagine my life without you.</p>
+        <p>Will you make me the happiest person in the world and marry me?</p>
+        <button onclick="showRing()">💍 Yes, I will!</button>
+        <div id="ring" class="ring"></div>
+    </div>
+    <link rel="stylesheet" href="prathap.css">
+</body>
+<script>
+    function showRing() {
+    var ring = document.getElementById("ring");
+    ring.style.display = "block";
+    ring.style.animation = "showRing 1s ease-in-out";
+}
+</script>
+</html>
