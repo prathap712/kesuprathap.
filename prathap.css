@@ -1,0 +1,92 @@
+body {
+    background-color: #f8f0f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+h1 {
+    color: #ff6b81;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff6b81;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4757;
+}
+
+.ring {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gold;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.ring::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+.ring::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #f9f0c1;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+    left: 70px;
+}
+
+@keyframes showRing {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
